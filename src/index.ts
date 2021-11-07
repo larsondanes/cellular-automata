@@ -32,7 +32,7 @@ function doLine(w: number, lineIndex: number): Line {
   let line: Line = new Line(lineIndex);  // lol cell-array sounds like "celery"
   for (let i = 0; i < w; i++) {
     //line.push("0 ");
-    line.addCell(new Cell(i));
+    line.addCell(new Cell(i, lineIndex));
   }
   return line;
 }
